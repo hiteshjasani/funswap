@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.email     = "hitesh DoT jasani aT gmail dot com"
   s.files     = ["lib/funswap.rb"]
   s.files     += Dir["test/**/*.rb"]
+  s.files     += ["Rakefile", "README.md", "LICENSE"]
   s.homepage  = "https://github.com/hiteshjasani/funswap"
   s.license   = "MIT"
 end
