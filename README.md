@@ -20,7 +20,7 @@ end
 ```
 
 It's easy enough to test these in a straightforward manner since they are functions with no dependency on
-any global data.  Now suppose those are used in another set of functions or even object#methods.
+any shared data.  Now suppose those are used in another set of functions or even object#methods.
 
 ```ruby
 module XYZ
@@ -49,7 +49,7 @@ enable for objects and FunSwap makes possible with functions.
 puts ABC.add2(3)
 
 # outputs 24
-FunSwap(with_fn(ABC, :add2, ->(x) { x + 21 }) do
+FunSwap.with_fn(ABC, :add2, ->(x) { x + 21 }) do
   puts ABC.add2(3)
 end
 
