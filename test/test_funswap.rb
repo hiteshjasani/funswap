@@ -7,7 +7,7 @@ module XYZ
   end
 
   module_function
-  def self.mul2(x)
+  def mul2(x)
     x * 2
   end
 end
@@ -19,7 +19,7 @@ module ABC
     end
 
     module_function
-    def self.mul5(x)
+    def mul5(x)
       x * 5
     end
   end
